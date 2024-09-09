@@ -498,7 +498,7 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	gap: 1.25em;
-	width: 100%;
+	width: 90%;
 	height: auto;
 	padding: 1.25em 1.25em;
 	border: none;
@@ -509,6 +509,7 @@ textarea {
 	width: 25em;
 	height: 3em;
 	border: none;
+	position: relative;
 	border-radius: 0.625em;
 	border: none;
 }
@@ -717,6 +718,9 @@ input {
 		margin: 20em;
 	}
 
+	header {
+		height: 20em;
+	}
 	header .nav-btn {
 		display: flex;
 		justify-content: center;
@@ -729,7 +733,7 @@ input {
 		border: none;
 		right: 5%;
 		top: 20%;
-		width: 20%;
+		width: 30%;
 		height: 6.25em;
 		font-size: 1.35rem;
 	}
@@ -885,9 +889,73 @@ input {
 	.about-container {
 		width: 15em;
 	}
+	.container-div {
+		margin-top: -7em;
+		width: 25em;
+		border: 0.5em solid var(--primaryColor);
+	}
+
+	.input {
+		position: relative;
+		width: 90%;
+	}
+	input {
+		width: 90%;
+		font-size: 1.2em;
+		position: absolute;
+	}
+
+	.container-div a {
+		width: 90%;
+	}
+
+	.container-div button {
+		width: 40%;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 500px) {
+	header {
+		height: 15em;
+	}
+
+	header .nav-btn {
+		margin-top: -1em;
+	}
+
+	.container-div {
+		margin-top: -15em;
+		width: 90%;
+		border: 0.125em solid var(--primaryColor);
+	}
+
+	.inputs {
+		width: 80%;
+	}
+
+	.input {
+		position: relative;
+		width: 90%;
+	}
+	input {
+		width: 90%;
+		margin-left: -1em;
+		position: absolute;
+	}
+
+	.input img {
+		position: relative;
+	}
+	.container-div a {
+		width: 90%;
+	}
+
+	.container-div button {
+		width: 40%;
+		justify-content: center;
+	}
+
 	#logo {
 		position: absolute;
 		font-size: 1.5rem;
