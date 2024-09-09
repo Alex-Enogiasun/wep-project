@@ -884,6 +884,8 @@ input {
 	}
 
 	.inner-circle {
+		margin-top: 1em;
+		margin-bottom: 0em;
 		border-radius: 50%;
 	}
 	.about-container {
@@ -973,5 +975,14 @@ input {
 	img#id1,
 	img#id3 {
 		display: none;
+	}
+}
+@media (max-width: 375px) {
+	.focus-section-div {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		margin: 2em 0em 2em -1em;
 	}
 }
