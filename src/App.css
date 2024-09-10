@@ -808,7 +808,7 @@ input {
 		background-color: var(--textColor);
 		height: 100em;
 		z-index: 1;
-		width: 40em;
+		width: 100%;
 		position: relative;
 		float: right;
 		margin: auto;
@@ -821,7 +821,7 @@ input {
 		flex-direction: column;
 		position: absolute;
 		right: 1em;
-		top: 5em;
+		top: 6em;
 		font-size: 2rem;
 		color: var(--textColor);
 		background-color: var(--primaryColor);
