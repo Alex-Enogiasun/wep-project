@@ -914,7 +914,7 @@ input {
 		width: 40%;
 		justify-content: center;
 	}
-}
+
 
 @media (max-width: 500px) {
 
@@ -976,6 +976,19 @@ input {
 	img#id3 {
 		display: none;
 	}
+
+	.info{
+		width: 100%;
+		margin-left: auto;
+		
+	}
+.focus-section-div{
+	width: 110%;
+	row-gap: 5px;
+	column-gap: 10px;
+	margin-left: -30px;
+}
+
 }
 @media (max-width: 375px) {
 	.focus-section-div {
