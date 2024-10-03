@@ -639,7 +639,7 @@ input {
 	}
 
 	.wave-section img {
-		margin: 1em 0.6em;
+		margin: 1em 0.8em 0.6em;
 	}
 
 	.focus-section {
@@ -839,7 +839,7 @@ input {
 
 	.wave-section img {
 		height: 3em;
-		margin: 1em 0.7em;
+		margin: 0.5em 0.6em 0em;
 	}
 
 	.para-section1,
@@ -964,8 +964,9 @@ input {
 		margin-left: 1em;
 	}
 
-	.wave-section img {
-		height: 3em;
+.wave-section img {
+margin: 0.5em 0.3em 0em;
+height: 3em;
 	}
 
 	.about-container {
