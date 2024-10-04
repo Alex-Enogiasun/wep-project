@@ -844,11 +844,11 @@ input {
 	}
 
 	.info {
-		width: 90%;
+		width: 95%;
 	}
 
 	strong {
-		font-size: 2em;
+		font-size: 1.5em;
 		text-align: center;
 	}
 
@@ -860,7 +860,7 @@ input {
 	.focus-text p {
 		text-align: center;
 		font-size: 1em;
-		margin-left: -10%;
+		margin-left: -15%;
 	}
 
 	.focus-section {
@@ -870,8 +870,13 @@ input {
 		height: auto;
 		color: var(--textColor);
 	}
+
 	.focus-section-div {
-		margin: 5% -2% 5% 0%;
+		width: 115%;
+		height: 12em;
+		row-gap: 2%;
+		column-gap: 2%;
+		margin: 2% 5% 5% -17%;
 	}
 
 	.inner-circle {
@@ -918,11 +923,17 @@ input {
 
 	.value-section strong {
 		font-size: 1.5em;
-		margin-left: 2%;
+		margin-left: -15%;
 	}
 	.focus-section strong {
 		font-size: 1.5em;
-		margin-left: 6%;
+	}
+	.numbers-of-users {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1em;
+		color: red;
 	}
 
 	.container-div button {
@@ -940,14 +951,15 @@ input {
 	}
 
 	.info {
-		width: 100%;
-		margin-left: auto;
+		width: 99%;
+		margin: auto;
 	}
 	.focus-section-div {
-		width: 120%;
-		row-gap: 5px;
-		column-gap: 10px;
-		margin: 2% 5% 5% -15%;
+		width: 115%;
+		height: 10em;
+		row-gap: 5%;
+		column-gap: 3%;
+		margin: 2% 5% 5% -17%;
 	}
 }
 @media (max-width: 375px) {
