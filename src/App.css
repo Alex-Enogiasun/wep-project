@@ -2,7 +2,7 @@
 	--primaryColor: hsl(0, 100%, 100%);
 	--secondaryColor: hsl(191, 100%, 45%);
 	--textColor: hsl(190, 100%, 20%);
-	--ctaColor: hsl(240, 100%, 54%);
+	--ctaColor: hsl(240, 100%, 50%);
 }
 * {
 	margin: 0;
@@ -27,7 +27,7 @@ body {
 #logo {
 	position: absolute;
 	color: var(--primaryColor);
-	left: 1.5rem;
+	left: 10%;
 }
 
 header {
@@ -61,10 +61,10 @@ ul {
 	background-color: var(--ctaColor);
 	color: var(--primaryColor);
 	display: block;
-	width: 6.25rem;
+	width: 4.25em;
 	margin-top: 6rem;
 	font-size: 1.3rem;
-	border: 4px solid var(--primaryColor);
+	border: solid var(--primaryColor);
 	border-radius: 1.3rem;
 }
 
@@ -176,10 +176,9 @@ header.nav-btn {
 	justify-content: center;
 }
 
-.office-pic,
-.phone-image-container {
-	max-width: 100%;
-	height: auto;
+.office-pic {
+	max-width: 30%;
+
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
 }
 
@@ -313,8 +312,14 @@ img {
 
 /* About.css */
 
+.about-wrapper{
+	background-image: url("trx-img5.jpg") ;
+	width: 100%;
+	
+}
 .about-container {
-	background-color: var(--secondaryColor);
+	background-color:transparent;
+	 backdrop-filter: blur(40px);
 	background-size: cover;
 	border-radius: 1.25em;
 	padding: 3em;
@@ -334,7 +339,7 @@ img {
 .about-container h2 {
 	font-size: 3em;
 	margin: 1.25em;
-	color: var(--primaryColor);
+	color: var(--textColor);
 }
 
 .about-container p {
@@ -342,13 +347,13 @@ img {
 	font-weight: 600;
 	margin-bottom: 0.625em;
 	color: var(--textColor);
-	background-color: var(--primaryColor);
 	border-radius: 0.62em;
 	padding: 1.25em;
 	text-align: center;
 }
 
 /* Services.css */
+
 .services-container {
 	display: flex;
 	justify-content: space-evenly;
@@ -378,8 +383,9 @@ img {
 .services-container p {
 	font-size: 1.25em;
 	margin-bottom: 1.25em;
-	background-color: var(--secondaryColor);
-	color: var(--primaryColor);
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+	color: var(--textColor);
 	font-weight: 700;
 	align-items: center;
 	border-radius: 1.25em;
@@ -394,10 +400,16 @@ img {
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
 }
 
+
 /* contact.css */
+
+div.contact-wrapper{
+background-image: url("trx-img5.jpg");
+}
 .contact-container {
 	justify-content: center;
-	background-color: var(--secondaryColor);
+background-color: transparent;
+backdrop-filter: blur(40px);
 	border-radius: 1.25em;
 	border: 0.3em solid var(--secondaryColor);
 	padding: 1.25em 1.25em;
@@ -410,7 +422,7 @@ img {
 .contact-container h1 {
 	margin-top: 1.25em 1.25em;
 	font-size: 2.5em;
-	color: var(--primaryColor);
+	color: var(--textColor);
 }
 
 .contact-container p {
@@ -482,16 +494,35 @@ textarea {
 	text-align: center;
 }
 
+
+div.container-div{
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+}
+.background {
+	background-image: url("trx-img5.jpg");
+}
+
 .text-div,
 .container-div span {
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 600;
+	font-weight: 700;
+	color: var(--textColor);
 }
 
 .underline {
 	background-color: var(--ctaColor);
 	width: 3em;
 	height: 0.3em;
+}
+
+label {
+	background-color: transparent;
+	color: ;
+	position: absolute;
+	width: 100%;
+	margin-top: -1.5em;
+	font-weight: 600;
 }
 
 .inputs {
@@ -569,6 +600,7 @@ input {
 	align-items: center;
 	justify-content: center;
 	gap: 0.625em;
+	border: solid var(--primaryColor);
 	border-radius: 0.625em;
 	color: var(--primaryColor);
 	font-weight: 600;
@@ -577,12 +609,24 @@ input {
 .signin-up:hover,
 .signin-up-grey:hover {
 	font-size: 600;
+	border: solid 5px var(--primaryColor);
 	background-color: var(--textColor);
+	color: var(--primaryColor);
+	cursor: pointer;
+}
+
+.signin-up:active,
+.signin-up-grey:active {
+	font-size: 600;
+	background-color: var(--ctaColor);
 	color: var(--primaryColor);
 }
 
 #forgot-password {
-	color: var(--primaryColor);
+	color: var(--textColor);
+	background-color: transparent;
+	text-align: left;
+	text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -597,27 +641,13 @@ input {
 }
 
 @media (max-width: 992px) {
-	html,
-	body {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow-x: hidden;
-	}
-
 	#logo {
-		font-size: 1.5rem;
-		margin-left: 1em;
+		left: 2.5%;
 	}
 	.section-1 {
 		width: 80%;
 		font-size: 1em;
 		margin-right: -6em;
-	}
-
-	.section-1 strong {
-		font-size: 3em;
 	}
 
 	.para-section1 {
@@ -690,11 +720,6 @@ input {
 }
 
 @media (max-width: 860px) {
-	#logo {
-		color: var(--primaryColor);
-		margin-left: 1em;
-		margin-top: -3em;
-	}
 	img#id1,
 	img#id3 {
 		display: none;
@@ -712,12 +737,6 @@ input {
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden;
-	}
-
-	#logo {
-		position: relative;
-		color: var(--primaryColor);
-		margin: 20em;
 	}
 
 	header {
@@ -792,16 +811,15 @@ input {
 		flex-direction: column;
 		flex-wrap: wrap;
 		width: 70%;
-		margin: 0em;
-		margin-top: 6em;
-		margin-bottom: 6em;
+		margin: 6em auto;
 		position: relative;
 		overflow: visible;
 	}
 
-	#logo {
-		font-size: 1.5rem;
-		margin-left: -2em;
+	div.section-1 .office-pic,
+	div.section-2 .office-pic {
+		min-width: 130%;
+		margin-left: -15%;
 	}
 
 	header .responsive_nav {
@@ -818,6 +836,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
+		border-radius: 0.5em;
 		right: 1em;
 		top: 6em;
 		font-size: 2rem;
@@ -828,26 +847,23 @@ input {
 		z-index: 1;
 	}
 
-	.section-1 img.office-pic {
-		border: solid var(--secondaryColor);
-	}
-
-	.section-2 img {
-		width: 100%;
-		margin: 1.25em 0em 0em -1em;
-	}
-
 	.wave-section img {
 		height: 3em;
 		margin: 0.5em 0.6em 0em;
 	}
 
-	.para-section1,
+	.para-section1 {
+		width: 90%;
+		height: auto;
+		text-align: justify;
+		margin-left: -6em;
+	}
 	.focus-text {
 		width: 90%;
 		height: auto;
 		text-align: justify;
 	}
+
 	.focus-text p {
 		text-align: justify;
 	}
@@ -858,7 +874,7 @@ input {
 		grid-template-columns: 1fr 1fr;
 		width: 100%;
 		height: auto;
-		margin: 2em 0em 2em -1em;
+		margin-left: -2.5%;
 	}
 
 	.info {
@@ -868,6 +884,7 @@ input {
 	strong {
 		padding: 0.625em;
 		margin: -0.635em;
+		text-align: center;
 	}
 	.focus-text strong {
 		text-align: justify;
@@ -879,6 +896,7 @@ input {
 		width: 100%;
 		height: auto;
 		color: var(--textColor);
+		margin-left: -6em;
 	}
 
 	.inner-circle {
@@ -897,12 +915,12 @@ input {
 
 	.input {
 		position: relative;
-		width: 90%;
+		width: 100%;
 	}
 	input {
 		width: 90%;
-		font-size: 1.2em;
-	
+		font-size: auto;
+
 		position: relative;
 	}
 
@@ -914,10 +932,9 @@ input {
 		width: 40%;
 		justify-content: center;
 	}
-
+}
 
 @media (max-width: 500px) {
-
 	header {
 		height: 15em;
 	}
@@ -932,41 +949,14 @@ input {
 		border: 0.125em solid var(--primaryColor);
 	}
 
-	.inputs {
-		width: 100%;
-	}
-
-	.input {
-		position: relative;
-		width: 90%;
-	}
-	input {
-		width: 90%;
-		margin-left: -1em;
-		position: absolute;
-	}
-
-	.input img {
-		position: relative;
-	}
-	.container-div a {
-		width: 90%;
-	}
-
 	.container-div button {
 		width: 40%;
 		justify-content: center;
 	}
 
-	#logo {
-		position: absolute;
-		font-size: 1.5rem;
-		margin-left: 1em;
-	}
-
-.wave-section img {
-margin: 0.5em 0.3em 0em;
-height: 3em;
+	.wave-section img {
+		margin: 0.5em 0.3em 0em;
+		height: 3em;
 	}
 
 	.about-container {
@@ -978,18 +968,16 @@ height: 3em;
 		display: none;
 	}
 
-	.info{
+	.info {
 		width: 100%;
 		margin-left: auto;
-		
 	}
-.focus-section-div{
-	width: 110%;
-	row-gap: 5px;
-	column-gap: 10px;
-	margin-left: -30px;
-}
-
+	.focus-section-div {
+		width: 110%;
+		row-gap: 5px;
+		column-gap: 10px;
+		margin-left: -2.5%;
+	}
 }
 @media (max-width: 375px) {
 	.focus-section-div {
@@ -997,11 +985,25 @@ height: 3em;
 		flex-direction: column;
 		width: 100%;
 		height: auto;
-		margin: 2em 0em 2em -1em;
+		margin-left: auto;
 	}
 
 	div input {
 		width: 70%;
 		position: relative;
 	}
+}
+
+@media screen and (max-width: 250px) {
+  body * {
+    display: none; /* Hide all content */
+  }
+
+  .wrapper{
+    display: block;
+    font-size: 20px;
+	background-color: red;
+    text-align: center;
+    margin-top: 50px;
+  }
 }

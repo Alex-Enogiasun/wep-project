@@ -20,29 +20,41 @@ const SignUpForm = () => {
 						) : (
 							<div className="input">
 								<img src="./images/id-icon.png" width="20" alt="lock-icon" />
-								<input type="text" name="name" placeholder="Name" required />
+								<label htmlFor="name">Name</label>
+								<input
+									type="text"
+									name="name"
+									placeholder="Enter your name"
+									required
+								/>
 							</div>
 						)}
 
 						<div className="input">
 							<img src="./images/email-icon.jpg" width="30" alt="email-icon" />
-							<input type="email" name="email" placeholder="Email" required />
+							<label htmlFor="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								placeholder="Enter your email"
+								required
+							/>
 						</div>
 						<div className="input">
 							<img src="./images/lock-icon.png" width="20" alt="lock-icon" />
+							<label htmlFor="password">Password</label>
 							<input
 								type="password"
 								name="password"
-								placeholder="Password"
+								placeholder="Enter your password"
 								required
 							/>
 						</div>
 						{action === "Log In" ? (
 							<div className="forgot-password">
 								<span>
-									Forget Password?
 									<a href="" id="forgot-password">
-										Click Here
+										Forget Password?
 									</a>
 								</span>
 							</div>

@@ -35,8 +35,7 @@ function Mainsection() {
 					<img
 						src="./images/mobile-phone.GIF"
 						alt="mobile-phone"
-						width="400"
-						height="400"
+						
 						className="office-pic"
 					/>
 				</div>
@@ -49,8 +48,7 @@ function Mainsection() {
 					<img
 						src="./images/officepic.jpg"
 						alt="mobile-phone"
-						width="400"
-						height="400"
+						
 						className="office-pic"
 					/>
 
