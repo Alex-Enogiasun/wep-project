@@ -177,8 +177,7 @@ header.nav-btn {
 }
 
 .office-pic {
-	max-width: 30%;
-
+	max-width: 100%;
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
 }
 
@@ -635,6 +634,14 @@ input {
 		padding: 0;
 		overflow-x: hidden;
 	}
+	.section-2 p{width: 80%;}
+
+	.office-pic{
+		max-width: 100%;
+		margin-left: 8em;
+	}
+
+	
 }
 
 @media (max-width: 992px) {
@@ -709,13 +716,9 @@ input {
 		height: auto;
 	}
 
-	.section-1 .office-pic {
-		max-width: 60%;
-		margin-left: 1em;
-	}
 
 	.office-pic {
-		max-width: 60%;
+		max-width: 100%;
 		margin-left: 8em;
 	}
 
@@ -826,7 +829,7 @@ input {
 	div.section-2 .office-pic {
 		min-width: 130%;
 		height: auto;
-		margin-left: -15%;
+		margin-left: -16%;
 	}
 
 	header .responsive_nav {
@@ -903,7 +906,7 @@ input {
 		width: 100%;
 		height: auto;
 		color: var(--textColor);
-		margin-left: -6em;
+		margin-left: -5em;
 	}
 
 	.inner-circle {
@@ -983,7 +986,7 @@ input {
 		width: 110%;
 		row-gap: 5px;
 		column-gap: 10px;
-		margin-left: -2.5%;
+		margin-left: -9%;
 	}
 }
 @media (max-width: 375px) {
