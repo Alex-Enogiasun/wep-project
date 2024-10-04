@@ -22,6 +22,7 @@ body {
 	width: auto;
 	align-content: center;
 	justify-content: center;
+	overflow-y: scroll;
 }
 
 #logo {
@@ -312,14 +313,13 @@ img {
 
 /* About.css */
 
-.about-wrapper{
-	background-image: url("trx-img5.jpg") ;
+.about-wrapper {
+	background-image: url("trx-img5.jpg");
 	width: 100%;
-	
 }
 .about-container {
-	background-color:transparent;
-	 backdrop-filter: blur(40px);
+	background-color: transparent;
+	backdrop-filter: blur(40px);
 	background-size: cover;
 	border-radius: 1.25em;
 	padding: 3em;
@@ -400,16 +400,15 @@ img {
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
 }
 
-
 /* contact.css */
 
-div.contact-wrapper{
-background-image: url("trx-img5.jpg");
+div.contact-wrapper {
+	background-image: url("trx-img5.jpg");
 }
 .contact-container {
 	justify-content: center;
-background-color: transparent;
-backdrop-filter: blur(40px);
+	background-color: transparent;
+	backdrop-filter: blur(40px);
 	border-radius: 1.25em;
 	border: 0.3em solid var(--secondaryColor);
 	padding: 1.25em 1.25em;
@@ -494,8 +493,7 @@ textarea {
 	text-align: center;
 }
 
-
-div.container-div{
+div.container-div {
 	background-color: transparent;
 	backdrop-filter: blur(10px);
 }
@@ -819,6 +817,7 @@ input {
 	div.section-1 .office-pic,
 	div.section-2 .office-pic {
 		min-width: 130%;
+		height: auto;
 		margin-left: -15%;
 	}
 
@@ -995,15 +994,15 @@ input {
 }
 
 @media screen and (max-width: 250px) {
-  body * {
-    display: none; /* Hide all content */
-  }
+	body * {
+		display: none; /* Hide all content */
+	}
 
-  .wrapper{
-    display: block;
-    font-size: 20px;
-	background-color: red;
-    text-align: center;
-    margin-top: 50px;
-  }
+	.wrapper {
+		display: block;
+		font-size: 20px;
+		background-color: red;
+		text-align: center;
+		margin-top: 50px;
+	}
 }
