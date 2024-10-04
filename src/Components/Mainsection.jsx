@@ -35,7 +35,6 @@ function Mainsection() {
 					<img
 						src="./images/mobile-phone.GIF"
 						alt="mobile-phone"
-						
 						className="office-pic"
 					/>
 				</div>
@@ -46,9 +45,8 @@ function Mainsection() {
 				{/*section2 */}
 				<div className="section-2">
 					<img
-						src="./images/officepic.jpg"
-						alt="mobile-phone"
-						
+						src="./images/office-pic2.jpg"
+						alt="office-pix2"
 						className="office-pic"
 					/>
 
