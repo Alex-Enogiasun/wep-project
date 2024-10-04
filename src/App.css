@@ -22,6 +22,7 @@ body {
 	width: auto;
 	align-content: center;
 	justify-content: center;
+	padding: auto;
 }
 
 #logo {
@@ -158,19 +159,6 @@ header.nav-btn {
 	visibility: hidden;
 }
 
-.section-1 p {
-	color: var(--textColor);
-	font-size: 1.25em;
-	font-weight: 500;
-	text-align: justify;
-	width: auto;
-}
-
-.para-section1 {
-	width: 45em;
-	padding: 0em 2em;
-}
-
 .users-image {
 	border-radius: 1.25em;
 	justify-content: center;
@@ -179,67 +167,57 @@ header.nav-btn {
 .office-pic {
 	max-width: 100%;
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.wave-section {
+	display: flex;
+	justify-content: center;
+	background-color: var(--secondaryColor);
+	width: 100%;
+	height: 3em;
+}
+.wave-section img {
+	margin: 1% auto;
+	width: 98%;
+	height: 80%;
+	margin: auto;
 }
 
 .section-1 {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 	align-self: center;
-	width: auto;
-	height: auto;
 }
-.section1-2 {
-	background-color: var(--secondaryColor);
-	box-shadow: 0.625em 0.625em 6.25em var(--secondaryColor);
-	border-radius: 0.625em;
-	margin-bottom: 1.25em;
-	width: auto;
-}
-
-.wave-section {
-	background-color: var(--secondaryColor);
-	height: 100%;
-	width: 100%;
-}
-
 .section-2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	width: auto;
-	height: auto;
-	width: auto;
-	height: auto;
-	margin-left: -20em;
 }
 
 strong {
 	color: var(--secondaryColor);
-	font-size: 3em;
+	font-size: 1.5em;
 	line-height: 1.5;
 }
 
-.focus-section {
-	width: 20em;
-	padding: 0em 2em;
-}
-
+.value-section,
 .focus-section p {
 	color: var(--textColor);
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: 500;
 	width: auto;
 	height: auto;
-	text-align: justify;
+	text-align: center;
 }
 
+.value-text,
 .focus-text {
-	width: 35em;
-	height: 20em;
-	padding: 0em 0em;
-	margin-bottom: -3em;
+	width: 33em;
+	margin: auto;
 }
 
 .focus-section-div {
@@ -251,14 +229,9 @@ strong {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 30em;
 	height: 13em;
-	padding: 1em 1em;
+	padding: 0.5em 0.5em;
 	margin: 0em 0em;
 	border-radius: 2em;
-}
-
-.office-pic {
-	border: solid var(--secondaryColor);
-	flex: 1;
 }
 
 .info {
@@ -299,7 +272,11 @@ a,
 
 img {
 	border-radius: 1.25em;
-	margin: 1.25em;
+	margin: auto;
+}
+
+#mobile-phone-pic,
+#office-pic {
 }
 
 .footer-2 p {
@@ -335,13 +312,13 @@ img {
 
 .about-container h1,
 .about-container h2 {
-	font-size: 3em;
-	margin: 1.25em;
+	font-size: 2em;
+	margin: 1em;
 	color: var(--textColor);
 }
 
 .about-container p {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: 600;
 	margin-bottom: 0.625em;
 	color: var(--textColor);
@@ -368,18 +345,18 @@ img {
 
 .services-container h1 {
 	margin-top: 1.25em;
-	font-size: 2.5em;
+	font-size: 2em;
 	margin-bottom: 1.25em;
 	color: var(--textColor);
 }
 
 .services-container h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	margin-top: 1.25em;
 }
 
 .services-container p {
-	font-size: 1.25em;
+	font-size: 1em;
 	margin-bottom: 1.25em;
 	background-color: transparent;
 	backdrop-filter: blur(10px);
@@ -387,7 +364,7 @@ img {
 	font-weight: 700;
 	align-items: center;
 	border-radius: 1.25em;
-	text-align: justify;
+	text-align: center;
 	padding: 1.2em;
 }
 
@@ -418,15 +395,15 @@ div.contact-wrapper {
 
 .contact-container h1 {
 	margin-top: 1.25em 1.25em;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: var(--textColor);
 }
 
 .contact-container p {
-	font-size: 1.5rem;
+	font-size: 1em;
 	margin-bottom: 0.625em;
 	color: var(--textColor);
-	text-align: justify;
+	text-align: center;
 	background-color: var(--primaryColor);
 	border-radius: 0.625em;
 	padding: 0.625em;
@@ -492,18 +469,19 @@ textarea {
 }
 
 div.container-div {
-	background-color: transparent;
+	background-color: var(--secondaryColor);
 	backdrop-filter: blur(10px);
 }
 .background {
 	background-image: url("trx-img5.jpg");
+	background-color: var(--secondaryColor);
 }
 
 .text-div,
 .container-div span {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
-	color: var(--textColor);
+	color: var(--primaryColor);
 }
 
 .underline {
@@ -514,7 +492,6 @@ div.container-div {
 
 label {
 	background-color: transparent;
-	color: ;
 	position: absolute;
 	width: 100%;
 	margin-top: -1.5em;
@@ -634,14 +611,6 @@ input {
 		padding: 0;
 		overflow-x: hidden;
 	}
-	.section-2 p {
-		width: 80%;
-	}
-
-	.office-pic {
-		max-width: 100%;
-		margin-left: 8em;
-	}
 }
 
 @media (max-width: 992px) {
@@ -657,16 +626,7 @@ input {
 	#logo {
 		left: 2.5%;
 	}
-	.section-1 {
-		width: 80%;
-		font-size: 1em;
-		margin-right: -6em;
-	}
 
-	.para-section1 {
-		margin: 2em 0em 2em -2em;
-		text-align: justify;
-	}
 	.users-image {
 		height: 2.5em;
 	}
@@ -675,40 +635,33 @@ input {
 		text-align: center;
 	}
 
+	.section-1 {
+		width: 80%;
+		font-size: 1em;
+		margin-right: -5em;
+	}
+
 	.section-2 {
 		width: 80%;
 		font-size: 1em;
 		margin-left: -10em;
 	}
 
-	.wave-section img {
-		margin: 1em 0.8em 0.6em;
-	}
-
-	.focus-section {
-		margin-left: -2em;
-		font-size: 1em;
-		background-color: transparent;
+	.section-1 {
+		margin-right: 5%;
 	}
 
 	.focus-section-div {
-		margin-left: em;
-		margin-top: 2em;
-		margin-bottom: 2em;
-		width: 22em;
-	}
-	.focus-text {
-		margin-left: 1em;
-		margin-top: 2em;
-		margin-bottom: 2em;
+		margin-left: 3em;
+		padding: auto;
 		width: 20em;
-		padding-right: 2em;
+		height: auto;
 	}
-	.focus-text p {
-		width: 100%;
-		height: 100%;
-		text-align: justify;
-		margin: 0;
+	.value-text,
+	.focus-text {
+		margin: auto;
+		width: auto;
+		padding: auto;
 	}
 
 	.info {
@@ -718,7 +671,35 @@ input {
 
 	.office-pic {
 		max-width: 100%;
-		margin-left: 8em;
+	}
+	#office-pic {
+		margin: 2% 2% 2% 20%;
+		max-width: 60%;
+	}
+	#mobile-phone-pic {
+		margin: 5% -5% 5% 2%;
+		max-width: 60%;
+	}
+	strong {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.focus-text p {
+		margin-left: 4em;
+		text-align: center;
+	}
+	.value-text p {
+		text-align: center;
+	}
+
+	.value-text strong {
+		text-align: left;
+		margin-left: -2em;
+	}
+
+	.focus-text strong {
+		margin-left: 4em;
 	}
 
 	img#id1,
@@ -748,7 +729,7 @@ input {
 	}
 
 	header {
-		height: 20em;
+		height: 10em;
 	}
 	header .nav-btn {
 		display: flex;
@@ -760,10 +741,9 @@ input {
 		position: absolute;
 		background-color: var(--secondaryColor);
 		border: none;
-		right: 5%;
+		right: -5%;
 		top: 20%;
 		width: 30%;
-		height: 6.25em;
 		font-size: 1.35rem;
 	}
 
@@ -819,7 +799,7 @@ input {
 		flex-direction: column;
 		flex-wrap: wrap;
 		width: 70%;
-		margin: 6em auto;
+		margin: auto;
 		position: relative;
 		overflow: visible;
 	}
@@ -828,7 +808,6 @@ input {
 	div.section-2 .office-pic {
 		min-width: 130%;
 		height: auto;
-		margin-left: -16%;
 	}
 
 	header .responsive_nav {
@@ -856,34 +835,12 @@ input {
 		z-index: 1;
 	}
 
-	.wave-section img {
-		height: 3em;
-		margin: 0.5em 0.6em 0em;
+	#mobile-phone-pic {
+		margin-left: -15%;
 	}
 
-	.para-section1 {
-		width: 90%;
-		height: auto;
-		text-align: justify;
-		margin-left: -4em;
-	}
-	.focus-text {
-		width: 90%;
-		height: auto;
-		text-align: justify;
-	}
-
-	.focus-text p {
-		text-align: justify;
-	}
-
-	.focus-section-div {
-		display: grid;
-		flex-direction: column;
-		grid-template-columns: 1fr 1fr;
-		width: 100%;
-		height: auto;
-		margin-left: -2.5%;
+	#office-pic {
+		margin: 5% 0% 10% -15%;
 	}
 
 	.info {
@@ -891,12 +848,19 @@ input {
 	}
 
 	strong {
-		padding: 0.625em;
-		margin: -0.635em;
+		font-size: 2em;
 		text-align: center;
 	}
-	.focus-text strong {
-		text-align: justify;
+
+	.focus-section strong,
+	.focus-section p {
+		margin-left: auto;
+	}
+	.value-text p,
+	.focus-text p {
+		text-align: center;
+		font-size: 1em;
+		margin-left: -10%;
 	}
 
 	.focus-section {
@@ -905,7 +869,9 @@ input {
 		width: 100%;
 		height: auto;
 		color: var(--textColor);
-		margin-left: -5em;
+	}
+	.focus-section-div {
+		margin: 5% -2% 5% 0%;
 	}
 
 	.inner-circle {
@@ -944,28 +910,24 @@ input {
 }
 
 @media (max-width: 500px) {
-	header {
-		height: 15em;
-	}
-
-	header .nav-btn {
-		margin-top: -1em;
-	}
-
 	.container-div {
 		margin: 5em 0em;
 		width: 90%;
 		border: 0.125em solid var(--primaryColor);
 	}
 
+	.value-section strong {
+		font-size: 1.5em;
+		margin-left: 2%;
+	}
+	.focus-section strong {
+		font-size: 1.5em;
+		margin-left: 6%;
+	}
+
 	.container-div button {
 		width: 40%;
 		justify-content: center;
-	}
-
-	.wave-section img {
-		margin: 0.5em 0.3em 0em;
-		height: 3em;
 	}
 
 	.about-container {
@@ -985,7 +947,7 @@ input {
 		width: 110%;
 		row-gap: 5px;
 		column-gap: 10px;
-		margin-left: -9%;
+		margin: 2% 5% 5% -15%;
 	}
 }
 @media (max-width: 375px) {
@@ -994,7 +956,7 @@ input {
 		flex-direction: column;
 		width: 100%;
 		height: auto;
-		margin-left: auto;
+		margin: 5% 0% 5% -10%;
 	}
 
 	div input {
@@ -1011,7 +973,6 @@ input {
 	.wrapper {
 		display: block;
 		font-size: 20px;
-		background-color: red;
 		text-align: center;
 		margin-top: 50px;
 	}

@@ -11,15 +11,17 @@ function Mainsection() {
 			<div className="wrapper">
 				{/*section1 */}
 				<div className="section-1">
-					<div className="para-section1">
-						<strong>Ready to join? Seamless Payments</strong>
+					<div className="value-section">
+						<div className="value-text">
+							<strong>Ready to join? Seamless Payments</strong>
 
-						<p>
-							Value Added Services (VAS) organization that offers instant
-							recharge of Airtime, Data Bundle, CableTV (DStv, GOtv &
-							Startimes), Electricity Bill Payment, Recharge Card Printing and
-							so much more to our customers.
-						</p>
+							<p>
+								Value Added Services (VAS) organization that offers instant
+								recharge of Airtime, Data Bundle, CableTV (DStv, GOtv &
+								Startimes), Electricity Bill Payment, Recharge Card Printing and
+								so much more to our customers.
+							</p>
+						</div>
 						<p className="numbers-of-users">
 							<img
 								src="./images/image.png"
@@ -36,6 +38,7 @@ function Mainsection() {
 						src="./images/mobile-phone.GIF"
 						alt="mobile-phone"
 						className="office-pic"
+						id="mobile-phone-pic"
 					/>
 				</div>
 
@@ -48,6 +51,7 @@ function Mainsection() {
 						src="./images/office-pic2.jpg"
 						alt="office-pix2"
 						className="office-pic"
+						id="office-pic"
 					/>
 
 					<div className="focus-section">
