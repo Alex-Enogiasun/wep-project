@@ -93,7 +93,7 @@ ul {
 	border: 0.3rem solid var(--primaryColor);
 	border-radius: 1.3rem;
 	cursor: pointer;
-	box-shadow: 0rem 0.625rem 1.875rem 0.625rem;
+	box-shadow: 0rem 0.625rem 1.625rem 0.625rem;
 }
 
 /*SignUpForm css*/
@@ -115,7 +115,7 @@ ul {
 	border-radius: 1.875rem;
 	width: 28.125rem;
 	height: 25rem;
-	box-shadow: 0rem 2.5rem 6.25rem var(--secondaryColor);
+	box-shadow: 0rem  2.5rem 2.5rem var(--secondaryColor);
 }
 
 .header-div {
@@ -166,7 +166,7 @@ header.nav-btn {
 
 .office-pic {
 	max-width: 100%;
-	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
+	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
@@ -305,7 +305,7 @@ img {
 	height: fit-content;
 	margin: auto;
 	line-height: 1.5;
-	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
+	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
 }
 
 .about-container img {
@@ -379,7 +379,7 @@ img {
 .services-container img {
 	border-radius: 1.25em;
 	margin-top: 2.5em;
-	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
+	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
 }
 .services-para {
 	margin-left: 2em;
