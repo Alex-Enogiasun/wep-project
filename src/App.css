@@ -264,7 +264,6 @@ a,
 	background-color: var(--secondaryColor);
 	text-align: center;
 	justify-content: center;
-	font-weight: 700;
 	font-size: 1em;
 	width: auto;
 	height: auto;
@@ -282,7 +281,7 @@ img {
 .footer-2 p {
 	display: block;
 	width: 100%;
-	font-size: 1.25em;
+	font-size: 1em;
 	text-align: center;
 }
 
