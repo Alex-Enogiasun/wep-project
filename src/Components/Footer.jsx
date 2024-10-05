@@ -14,7 +14,7 @@ const Footer = () => {
 
 			<footer className="footer-2">
 				<p>
-					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				
 				</p>
