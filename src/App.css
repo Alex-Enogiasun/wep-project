@@ -293,17 +293,22 @@ img {
 	width: 100%;
 }
 .about-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	background-color: transparent;
 	backdrop-filter: blur(40px);
 	background-size: cover;
 	border-radius: 1.25em;
-	padding: 3em;
+	padding: 2em;
 	width: 50em;
 	height: fit-content;
-	margin: 0 auto;
+	margin: auto;
 	line-height: 1.5;
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
 }
+
 .about-container img {
 	border-radius: 1.25em;
 	padding: auto;
@@ -332,7 +337,8 @@ img {
 .services-container {
 	display: flex;
 	justify-content: space-evenly;
-	padding: 3em;
+	padding: 2em;
+	text-align: center;
 	align-items: center;
 	border: 0.3em solid var(--secondaryColor);
 	width: 50em;
@@ -344,15 +350,18 @@ img {
 }
 
 .services-container h1 {
-	margin-top: 1.25em;
+	margin-top: 1em;
+	text-align: center;
 	font-size: 2em;
-	margin-bottom: 1.25em;
+	margin-bottom: 1em;
 	color: var(--textColor);
 }
 
 .services-container h2 {
 	font-size: 2em;
+	text-align: center;
 	margin-top: 1.25em;
+	text-align: center;
 }
 
 .services-container p {
@@ -371,8 +380,10 @@ img {
 .services-container img {
 	border-radius: 1.25em;
 	margin-top: 2.5em;
-	margin-left: 0.125em;
 	box-shadow: 1.25em 1.25em 6.25em var(--secondaryColor);
+}
+.services-para {
+	margin-left: 2em;
 }
 
 /* contact.css */
@@ -381,13 +392,16 @@ div.contact-wrapper {
 	background-image: url("trx-img5.jpg");
 }
 .contact-container {
+	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	background-color: transparent;
 	backdrop-filter: blur(40px);
 	border-radius: 1.25em;
 	border: 0.3em solid var(--secondaryColor);
 	padding: 1.25em 1.25em;
-	max-width: 50em;
+	max-width: 30em;
 	margin: 0 auto;
 	line-height: 1.5;
 	color: var(--primaryColor);
@@ -438,6 +452,7 @@ textarea {
 	border-radius: 1.25em;
 	background-color: var(--primaryColor);
 }
+
 .feedback button {
 	color: var(--primaryColor);
 	background-color: var(--ctaColor);
@@ -446,9 +461,9 @@ textarea {
 	width: 6.25em;
 	height: 1.875em;
 }
+
 .feedback button:hover {
 	background-color: var(--secondaryColor);
-
 	color: var(--primaryColor);
 	font-weight: 400;
 	width: 6.25em;
@@ -921,6 +936,11 @@ input {
 		border: 0.125em solid var(--primaryColor);
 	}
 
+	.feedback {
+		width: 95%;
+		height: auto;
+	}
+
 	.value-section strong {
 		font-size: 1.5em;
 		margin-left: -15%;
@@ -933,16 +953,11 @@ input {
 		justify-content: center;
 		align-items: center;
 		font-size: 1em;
-	
 	}
 
 	.container-div button {
 		width: 40%;
 		justify-content: center;
-	}
-
-	.about-container {
-		width: 20em;
 	}
 
 	img#id1,
@@ -962,18 +977,14 @@ input {
 		margin: 2% 5% 5% -17%;
 	}
 }
-@media (max-width: 375px) {
+@media (max-width: 350px) {
 	.focus-section-div {
 		display: flex;
 		flex-direction: column;
+		row-gap: 0.5em;
 		width: 100%;
 		height: auto;
 		margin: 5% 0% 5% -10%;
-	}
-
-	div input {
-		width: 70%;
-		position: relative;
 	}
 }
 
