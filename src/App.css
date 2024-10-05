@@ -166,7 +166,7 @@ header.nav-btn {
 
 .office-pic {
 	max-width: 100%;
-	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
+	box-shadow: 1.25em 1.25em 1em var(--secondaryColor);
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
