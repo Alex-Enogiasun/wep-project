@@ -488,9 +488,10 @@ textarea {
 .email,
 .email-us-footer {
 	display: block;
-	width: 100%;
+	width: 110%;
 	background-color: var(--secondaryColor);
 	text-align: center;
+	margin-left: -2em;
 }
 
 .container-div {
