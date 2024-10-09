@@ -289,11 +289,10 @@ img {
 
 .footer-2 p {
 	display: block;
-	width: 100%;
+	width: 95%;
 	font-size: 1em;
 	text-align: center;
-
-padding: 1em auto;
+	padding-bottom: 1em;
 }
 
 /* About.css */
@@ -345,7 +344,6 @@ padding: 1em auto;
 
 /* Services.css */
 
-
 .services-container {
 	display: flex;
 	justify-content: space-evenly;
@@ -395,7 +393,7 @@ padding: 1em auto;
 	box-shadow: 0em 0em 3em var(--secondaryColor);
 }
 .services-para {
-margin: auto;
+	margin: auto;
 }
 
 /* contact.css */
@@ -790,8 +788,7 @@ input {
 		flex-direction: column;
 	}
 
-
-	li{
+	li {
 		padding-left: 0em;
 	}
 
@@ -843,7 +840,7 @@ input {
 		width: 40em;
 	}
 
-	.contact-container{
+	.contact-container {
 		margin: 2em;
 	}
 }
@@ -864,7 +861,6 @@ input {
 	div.section-2 .office-pic {
 		min-width: 130%;
 		height: auto;
-	
 	}
 
 	#mobile-phone-pic {
@@ -885,16 +881,15 @@ input {
 		text-align: center;
 	}
 
-	.focus-section strong{
+	.focus-section strong {
 		margin-left: -25%;
 	}
 	.focus-section p {
 		margin-left: auto;
 	}
-	.value-text p{
+	.value-text p {
 		text-align: center;
 		font-size: 1em;
-		
 	}
 	.focus-text p {
 		text-align: center;
@@ -986,7 +981,6 @@ input {
 		column-gap: 3%;
 		margin: 2% 5% 5% -17%;
 	}
-
 }
 @media (max-width: 350px) {
 	.focus-section-div {
