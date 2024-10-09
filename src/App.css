@@ -775,7 +775,7 @@ input {
 	}
 
 	#getstarted {
-		top: 4em;
+		top: 3em;
 		left: 0.2em;
 		width: 160px;
 		height: auto;
@@ -787,7 +787,6 @@ input {
 		list-style-type: none;
 		display: flex;
 		flex-direction: column;
-		gap: 2.5em;
 	}
 
 	header nav {
