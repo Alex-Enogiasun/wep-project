@@ -292,7 +292,8 @@ img {
 	width: 100%;
 	font-size: 1em;
 	text-align: center;
-	padding: 2em;
+
+padding: 1em auto;
 }
 
 /* About.css */
