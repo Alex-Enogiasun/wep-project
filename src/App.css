@@ -658,7 +658,7 @@ input {
 	.section-2 {
 		width: 80%;
 		font-size: 1em;
-		margin-left: -6em;
+		margin-left: -60%;
 		margin-bottom: 4em;
 	}
 
@@ -695,7 +695,7 @@ input {
 	}
 
 	#office-pic {
-		margin: 5% 2% 2% 20%;
+		margin: 5% 2% 2% 70%;
 		max-width: 60%;
 	}
 	#mobile-phone-pic {
@@ -859,14 +859,16 @@ input {
 	div.section-2 .office-pic {
 		min-width: 130%;
 		height: auto;
+	
 	}
 
 	#mobile-phone-pic {
 		margin-left: -15%;
+		margin-bottom: 30%;
 	}
 
 	#office-pic {
-		margin: 5% 0% 10% -15%;
+		margin: 30% 0% 5% -20%;
 	}
 
 	.info {
@@ -974,7 +976,6 @@ input {
 		margin: 2% 5% 5% -17%;
 	}
 
-	
 }
 @media (max-width: 350px) {
 	.focus-section-div {
