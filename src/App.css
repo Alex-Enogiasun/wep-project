@@ -28,7 +28,8 @@ body {
 #logo {
 	position: absolute;
 	color: var(--primaryColor);
-	left: 10%;
+	top: 20%;
+	left: 5%;
 }
 
 header {
@@ -43,12 +44,17 @@ header {
 	background-color: var(--secondaryColor);
 	color: var(--textColor);
 	z-index: 1;
-	margin-bottom: 1.9rem;
 }
 
 ul {
 	list-style-type: none;
 	display: flex;
+	margin-left: -30%;
+}
+
+li {
+	padding: 6%;
+	margin-top: 10%;
 }
 
 #navLink1,
@@ -56,17 +62,14 @@ ul {
 #navLink3,
 #navLink4,
 #getstarted {
-	margin: 1rem 0em 0rem 1rem;
 	font-weight: 300;
 	text-decoration: none;
 	background-color: var(--ctaColor);
 	color: var(--primaryColor);
 	display: block;
-	width: 4.25em;
-	margin-top: 6rem;
-	font-size: 1.3rem;
+	width: 4.5rem;
 	border: solid var(--primaryColor);
-	border-radius: 1.3rem;
+	border-radius: 1rem;
 }
 
 #navLink1:hover,
@@ -74,26 +77,27 @@ ul {
 #navLink3:hover,
 #navLink4:hover {
 	height: auto;
-	font-weight: 700;
+	transition: background-color 0.5s ease, transform 0.5s ease;
 	background-color: var(--mainColor);
 	color: var(--primaryColor);
 }
 
 #getstarted {
 	animation: bgColorChange 5s infinite;
-	font-weight: 500;
+	font-weight: 300;
 	text-decoration: none;
+	padding: 0.3em;
+	width: 100%;
+	white-space: nowrap;
 	background-color: var(--ctaColor);
 	color: var(--primaryColor);
-	display: inline;
+	left: 150%;
+	top: -3em;
 	position: relative;
-	top: -2.2rem;
-	left: 9.375rem;
-	font-size: 1.3rem;
-	border: 0.3rem solid var(--primaryColor);
-	border-radius: 1.3rem;
+	font-size: 1em;
+	border-radius: 1rem;
 	cursor: pointer;
-	box-shadow: 0rem 0.625rem 1.625rem 0.625rem;
+	box-shadow: 0em 0em 0.5em 0.3em;
 }
 
 /*SignUpForm css*/
@@ -115,7 +119,7 @@ ul {
 	border-radius: 1.875rem;
 	width: 28.125rem;
 	height: 25rem;
-	box-shadow: 0rem  2.5rem 2.5rem var(--secondaryColor);
+	box-shadow: 0rem 2.5rem 2.5rem var(--secondaryColor);
 }
 
 .header-div {
@@ -161,14 +165,19 @@ header.nav-btn {
 
 .users-image {
 	border-radius: 1.25em;
+	width: 10em;
+	height: auto;
 	justify-content: center;
+}
+p.numbers-of-users {
+	display: flex;
+	flex-direction: column;
 }
 
 .office-pic {
 	max-width: 100%;
-	box-shadow: 1.25em 1.25em 1em var(--secondaryColor);
-	margin-top: 2em;
-	margin-bottom: 2em;
+	box-shadow: 0em 0em 3em var(--secondaryColor);
+	margin: 5%;
 }
 
 .wave-section {
@@ -202,13 +211,18 @@ strong {
 	color: var(--secondaryColor);
 	font-size: 1.5em;
 	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.value-section,
+.value-section p,
 .focus-section p {
 	color: var(--textColor);
 	font-size: 1em;
 	font-weight: 500;
+	padding-bottom: 2em;
+	line-height: 2;
 	width: auto;
 	height: auto;
 	text-align: center;
@@ -218,6 +232,7 @@ strong {
 .focus-text {
 	width: 33em;
 	margin: auto;
+	padding: auto;
 }
 
 .focus-section-div {
@@ -230,7 +245,7 @@ strong {
 	width: 30em;
 	height: 13em;
 	padding: 0.5em 0.5em;
-	margin: 0em 0em;
+	margin: 0em 4em;
 	border-radius: 2em;
 }
 
@@ -267,6 +282,7 @@ a,
 	font-size: 1em;
 	width: auto;
 	height: auto;
+	padding: 0.5em;
 }
 
 img {
@@ -274,15 +290,12 @@ img {
 	margin: auto;
 }
 
-#mobile-phone-pic,
-#office-pic {
-}
-
 .footer-2 p {
 	display: block;
 	width: 100%;
 	font-size: 1em;
 	text-align: center;
+	padding: 2em;
 }
 
 /* About.css */
@@ -303,13 +316,14 @@ img {
 	padding: 2em;
 	width: 50em;
 	height: fit-content;
-	margin: auto;
+	margin: 4em auto;
 	line-height: 1.5;
-	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
+	box-shadow: 0em 0em 3em var(--secondaryColor);
 }
 
 .about-container img {
 	border-radius: 1.25em;
+	box-shadow: 0em 0em 3em var(--secondaryColor);
 	padding: auto;
 	margin: auto;
 }
@@ -339,11 +353,11 @@ img {
 	padding: 2em;
 	text-align: center;
 	align-items: center;
-	border: 0.3em solid var(--secondaryColor);
+	border: 0.1em solid var(--secondaryColor);
 	width: 50em;
 	border-radius: 1.25em;
 	gap: 1.25em;
-	margin: 0 auto;
+	margin: 4em auto;
 	line-height: 1.5;
 	color: var(--textColor);
 }
@@ -379,7 +393,7 @@ img {
 .services-container img {
 	border-radius: 1.25em;
 	margin-top: 2.5em;
-	box-shadow: 1.25em 1.25em 1.25em var(--secondaryColor);
+	box-shadow: 0em 0em 3em var(--secondaryColor);
 }
 .services-para {
 	margin-left: 2em;
@@ -398,23 +412,24 @@ div.contact-wrapper {
 	background-color: transparent;
 	backdrop-filter: blur(40px);
 	border-radius: 1.25em;
-	border: 0.3em solid var(--secondaryColor);
+	border: 0.1em solid var(--secondaryColor);
+	box-shadow: 0em 0em 3em var(--secondaryColor);
 	padding: 1.25em 1.25em;
 	max-width: 30em;
-	margin: 0 auto;
+	margin: 4em auto;
 	line-height: 1.5;
 	color: var(--primaryColor);
 }
 
 .contact-container h1 {
-	margin-top: 1.25em 1.25em;
+	margin: 1em;
 	font-size: 2em;
 	color: var(--textColor);
 }
 
 .contact-container p {
 	font-size: 1em;
-	margin-bottom: 0.625em;
+	margin: 1em auto;
 	color: var(--textColor);
 	text-align: center;
 	background-color: var(--primaryColor);
@@ -425,7 +440,7 @@ div.contact-wrapper {
 .feedback {
 	display: flex;
 	flex-direction: column;
-	border: solid var(--secondaryColor);
+	border: solid 0.1em var(--secondaryColor);
 	background-color: var(--primaryColor);
 	max-width: 25em;
 	gap: 0.625em;
@@ -464,9 +479,7 @@ textarea {
 .feedback button:hover {
 	background-color: var(--secondaryColor);
 	color: var(--primaryColor);
-	font-weight: 400;
-	width: 6.25em;
-	height: 2.5em;
+	transition: background-color 0.5s ease, transform 0.5s ease;
 	cursor: pointer;
 }
 
@@ -482,20 +495,18 @@ textarea {
 	text-align: center;
 }
 
-div.container-div {
-	background-color: var(--secondaryColor);
-	backdrop-filter: blur(10px);
-}
-.background {
-	background-image: url("trx-img5.jpg");
-	background-color: var(--secondaryColor);
+.container-div {
+	background-color: var(--primaryColor);
+	box-shadow: 0em 0em 3em var(--secondaryColor);
+	border: solid 0.1em var(--secondaryColor);
+	padding: 2em;
 }
 
 .text-div,
 .container-div span {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
-	color: var(--primaryColor);
+	color: var(--textColor);
 }
 
 .underline {
@@ -520,13 +531,15 @@ label {
 	height: auto;
 	padding: 1.25em 1.25em;
 	border: none;
+	background-color: var(--secondaryColor);
+	margin: 2em auto;
 }
 
 .input {
 	background-color: var(--primaryColor);
 	width: 25em;
 	height: 3em;
-	border: none;
+	border: solid 0.1em var(--secondaryColor);
 	position: relative;
 	border-radius: 0.625em;
 	border: none;
@@ -536,22 +549,23 @@ input {
 	width: 90%;
 	height: 100%;
 	border-radius: 0.625em;
-	margin-left: 2.5em;
-	font-weight: 800;
-	color: var(--textColor);
+	float: right;
+	font-weight: 500;
+	font-size: larger;
 	border: none;
 }
 
 .input img {
 	position: absolute;
-	margin-left: 0.625em;
-	margin-top: 0.625em;
+	margin-left: 0.6em;
+	margin-top: 0.6em;
 }
 
 ::placeholder {
 	color: var(--textColor);
-	padding-left: 0.625em;
-	background-image: none;
+	padding-left: 1em;
+	font-size: 1em;
+	height: 100%;
 }
 
 .submit {
@@ -573,12 +587,12 @@ input {
 	gap: 0.625em;
 	border-radius: 0.625em;
 	color: var(--primaryColor);
-	font-weight: 600;
+	font-weight: 800;
 	cursor: pointer;
 }
 
 .signin-up-grey {
-	background-color: var(--secondaryColor);
+	background-color: var(--ctaColor);
 	width: 9.375em;
 	height: 1.875em;
 	display: flex;
@@ -587,7 +601,6 @@ input {
 	align-items: center;
 	justify-content: center;
 	gap: 0.625em;
-	border: solid var(--primaryColor);
 	border-radius: 0.625em;
 	color: var(--primaryColor);
 	font-weight: 600;
@@ -595,25 +608,25 @@ input {
 
 .signin-up:hover,
 .signin-up-grey:hover {
-	font-size: 600;
-	border: solid 5px var(--primaryColor);
 	background-color: var(--textColor);
 	color: var(--primaryColor);
+	 transition: background-color 0.5s ease, transform 0.5s ease;
 	cursor: pointer;
 }
 
 .signin-up:active,
 .signin-up-grey:active {
 	font-size: 600;
-	background-color: var(--ctaColor);
+	background-color: var(--textColor);
 	color: var(--primaryColor);
 }
 
 #forgot-password {
-	color: var(--textColor);
-	background-color: transparent;
+	color: var(--primaryColor);
+	background-color: var(--textColor);
+	font-weight: 800;
 	text-align: left;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
