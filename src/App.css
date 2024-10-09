@@ -219,10 +219,8 @@ strong {
 .value-section p,
 .focus-section p {
 	color: var(--textColor);
-	font-size: 1em;
 	font-weight: 500;
-	padding-bottom: 2em;
-	line-height: 2;
+	padding-bottom: 1em;
 	width: auto;
 	height: auto;
 	text-align: center;
@@ -230,8 +228,8 @@ strong {
 
 .value-text,
 .focus-text {
-	width: 33em;
 	margin: auto;
+	width: 33em;
 	padding: auto;
 }
 
@@ -245,7 +243,6 @@ strong {
 	width: 30em;
 	height: 13em;
 	padding: 0.5em 0.5em;
-	margin: 0em 4em;
 	border-radius: 2em;
 }
 
@@ -280,7 +277,7 @@ a,
 	text-align: center;
 	justify-content: center;
 	font-size: 1em;
-	width: auto;
+	width: 100%;
 	height: auto;
 	padding: 0.5em;
 }
@@ -318,7 +315,7 @@ img {
 	height: fit-content;
 	margin: 4em auto;
 	line-height: 1.5;
-	box-shadow: 0em 0em 3em var(--secondaryColor);
+	box-shadow: 0em 0em 3em var(--primaryColor);
 }
 
 .about-container img {
@@ -347,6 +344,7 @@ img {
 
 /* Services.css */
 
+
 .services-container {
 	display: flex;
 	justify-content: space-evenly;
@@ -357,7 +355,7 @@ img {
 	width: 50em;
 	border-radius: 1.25em;
 	gap: 1.25em;
-	margin: 4em auto;
+	margin: 2em 3em 2em 2em;
 	line-height: 1.5;
 	color: var(--textColor);
 }
@@ -373,13 +371,13 @@ img {
 .services-container h2 {
 	font-size: 2em;
 	text-align: center;
-	margin-top: 1.25em;
+	margin-top: 1em;
 	text-align: center;
 }
 
 .services-container p {
 	font-size: 1em;
-	margin-bottom: 1.25em;
+	margin-bottom: 2em;
 	background-color: transparent;
 	backdrop-filter: blur(10px);
 	color: var(--textColor);
@@ -392,17 +390,18 @@ img {
 
 .services-container img {
 	border-radius: 1.25em;
-	margin-top: 2.5em;
+	margin: 2.5em auto;
 	box-shadow: 0em 0em 3em var(--secondaryColor);
 }
 .services-para {
-	margin-left: 2em;
+margin: auto;
 }
 
 /* contact.css */
 
 div.contact-wrapper {
 	background-image: url("trx-img5.jpg");
+	width: 100%;
 }
 .contact-container {
 	display: flex;
@@ -413,7 +412,7 @@ div.contact-wrapper {
 	backdrop-filter: blur(40px);
 	border-radius: 1.25em;
 	border: 0.1em solid var(--secondaryColor);
-	box-shadow: 0em 0em 3em var(--secondaryColor);
+	box-shadow: 0em 0em 3em var(--primaryColor);
 	padding: 1.25em 1.25em;
 	max-width: 30em;
 	margin: 4em auto;
@@ -499,7 +498,11 @@ textarea {
 	background-color: var(--primaryColor);
 	box-shadow: 0em 0em 3em var(--secondaryColor);
 	border: solid 0.1em var(--secondaryColor);
-	padding: 2em;
+	padding: 2%;
+}
+
+.background {
+	margin: 4em auto;
 }
 
 .text-div,
@@ -557,8 +560,10 @@ input {
 
 .input img {
 	position: absolute;
-	margin-left: 0.6em;
-	margin-top: 0.6em;
+	margin-left: 0.2em;
+	margin-top: 0.9em;
+	width: 1.3em;
+	height: 1.3em;
 }
 
 ::placeholder {
@@ -610,7 +615,7 @@ input {
 .signin-up-grey:hover {
 	background-color: var(--textColor);
 	color: var(--primaryColor);
-	 transition: background-color 0.5s ease, transform 0.5s ease;
+	transition: background-color 0.5s ease, transform 0.5s ease;
 	cursor: pointer;
 }
 
@@ -626,6 +631,7 @@ input {
 	background-color: var(--textColor);
 	font-weight: 800;
 	text-align: left;
+	padding: 0.5em 0;
 	text-decoration: underline;
 }
 
@@ -638,25 +644,6 @@ input {
 		padding: 0;
 		overflow-x: hidden;
 	}
-}
-
-@media (max-width: 992px) {
-	html,
-	body {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		overflow-x: hidden;
-	}
-
-	#logo {
-		left: 2.5%;
-	}
-
-	.users-image {
-		height: 2.5em;
-	}
 
 	p.numbers-of-users {
 		text-align: center;
@@ -664,14 +651,15 @@ input {
 
 	.section-1 {
 		width: 80%;
-		font-size: 1em;
 		margin-right: -5em;
+		margin-bottom: 5em;
 	}
 
 	.section-2 {
 		width: 80%;
 		font-size: 1em;
-		margin-left: -10em;
+		margin-left: -6em;
+		margin-bottom: 4em;
 	}
 
 	.section-1 {
@@ -679,14 +667,24 @@ input {
 	}
 
 	.focus-section-div {
-		margin-left: 3em;
 		padding: auto;
 		width: 20em;
 		height: auto;
 	}
+
+	.focus-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1em;
+		padding: 1em;
+	}
+
 	.value-text,
 	.focus-text {
-		margin: auto;
+		margin: 1em;
+		font-size: 1em;
 		width: auto;
 		padding: auto;
 	}
@@ -696,24 +694,23 @@ input {
 		height: auto;
 	}
 
-	.office-pic {
-		max-width: 100%;
-	}
 	#office-pic {
-		margin: 2% 2% 2% 20%;
+		margin: 5% 2% 2% 20%;
 		max-width: 60%;
 	}
 	#mobile-phone-pic {
-		margin: 5% -5% 5% 2%;
+		margin: 5% -15% 2% 2%;
 		max-width: 60%;
 	}
 	strong {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 1.5em;
 		text-align: center;
 	}
 
 	.focus-text p {
-		margin-left: 4em;
 		text-align: center;
 	}
 	.value-text p {
@@ -721,12 +718,7 @@ input {
 	}
 
 	.value-text strong {
-		text-align: left;
-		margin-left: -2em;
-	}
-
-	.focus-text strong {
-		margin-left: 4em;
+		text-align: center;
 	}
 
 	img#id1,
@@ -735,17 +727,7 @@ input {
 	}
 }
 
-@media (max-width: 860px) {
-	img#id1,
-	img#id3 {
-		display: none;
-	}
-	.about-container {
-		width: 40em;
-	}
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	html,
 	body {
 		width: 100%;
@@ -793,14 +775,15 @@ input {
 	}
 
 	#getstarted {
-		top: 1.25em;
+		top: 4em;
 		left: 0.2em;
 		width: 160px;
 		height: auto;
 	}
 
 	ul {
-		margin-top: -45.1em;
+		margin: auto;
+		margin-top: 20em;
 		list-style-type: none;
 		display: flex;
 		flex-direction: column;
@@ -818,23 +801,6 @@ input {
 		background-color: var(--primaryColor);
 		transition: 1s;
 		transform: translateX(150vh);
-	}
-
-	.section-1,
-	.section-2 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		width: 70%;
-		margin: auto;
-		position: relative;
-		overflow: visible;
-	}
-
-	div.section-1 .office-pic,
-	div.section-2 .office-pic {
-		min-width: 130%;
-		height: auto;
 	}
 
 	header .responsive_nav {
@@ -860,6 +826,39 @@ input {
 		width: 2em;
 		height: 2em;
 		z-index: 1;
+	}
+}
+
+@media (max-width: 860px) {
+	img#id1,
+	img#id3 {
+		display: none;
+	}
+	.about-container {
+		width: 40em;
+	}
+
+	.contact-container{
+		margin: 2em;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-1,
+	.section-2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 70%;
+		margin: auto;
+		position: relative;
+		overflow: visible;
+	}
+
+	div.section-1 .office-pic,
+	div.section-2 .office-pic {
+		min-width: 130%;
+		height: auto;
 	}
 
 	#mobile-phone-pic {
@@ -932,7 +931,7 @@ input {
 	}
 
 	.container-div a {
-		width: 90%;
+		width: 100%;
 	}
 
 	.container-div button {
@@ -951,20 +950,6 @@ input {
 	.feedback {
 		width: 95%;
 		height: auto;
-	}
-
-	.value-section strong {
-		font-size: 1.5em;
-		margin-left: -15%;
-	}
-	.focus-section strong {
-		font-size: 1.5em;
-	}
-	.numbers-of-users {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 1em;
 	}
 
 	.container-div button {
@@ -988,6 +973,8 @@ input {
 		column-gap: 3%;
 		margin: 2% 5% 5% -17%;
 	}
+
+	
 }
 @media (max-width: 350px) {
 	.focus-section-div {
@@ -996,7 +983,7 @@ input {
 		row-gap: 0.5em;
 		width: 100%;
 		height: auto;
-		margin: 5% 0% 5% -10%;
+		margin: 5%;
 	}
 }
 
